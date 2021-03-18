@@ -19,4 +19,4 @@ def synthesize_data(f, f_name, project_root, input_dim, N=10000):
     print("saving to :", path)
     df.to_csv(path, index=False, compression="gzip")
     print("saved")
-    return df
+    return df, path
